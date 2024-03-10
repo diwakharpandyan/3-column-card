@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(0, 0%, 95%);
+}
+main {
+  display: flex;
+  max-width: 60rem;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 3rem 1rem;
+}
+main > div {
+  padding: 3rem;
+}
+.sedan {
+  background-color: hsl(31, 77%, 52%);
+}
+.suv {
+  background-color: hsl(184, 100%, 22%);
+}
+.luxury {
+  background-color: hsl(179, 100%, 13%);
+}
+.title {
+  font-family: "Big Shoulders Display", sans-serif;
+  font-weight: 700;
+  color: hsl(0, 0%, 95%);
+}
+.info {
+  font-family: "Lexend Deca", sans-serif;
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 1.5rem;
+  font-weight: 300;
+  font-size: 0.95rem;
+}
+button {
+  padding: 0.9rem;
+  border-radius: 20px;
+  width: 80%;
+  border: none;
+  margin-top: 4rem;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.sedan button {
+  color: hsl(31, 77%, 52%);
+}
+.sedan button:hover {
+  background-color: hsl(31, 77%, 52%);
+}
+.suv button {
+  color: hsl(184, 100%, 22%);
+}
+.suv button:hover {
+  background-color: hsl(184, 100%, 22%);
+}
+.luxury button {
+  color: hsl(179, 100%, 13%);
+}
+.luxury button:hover {
+  background-color: hsl(179, 100%, 13%);
+}
+button:hover {
+  cursor: pointer;
+  border: 1px solid whitesmoke;
+  color: whitesmoke;
+}
+@media (max-width: 50rem) {
+  main {
+    max-width: 20rem;
+    margin: 2rem 1rem;
+    display: block;
+  }
+  main > div {
+    padding: 2rem;
+  }
+  button {
+    margin-top: 1rem;
+    width: 60%;
+  }
+}
+@media (min-width: 50rem) and (max-width: 64rem) {
+  main {
+    max-width: 50rem;
+    margin: 2rem 1rem;
+  }
+  main > div {
+    padding: 1.5rem;
+  }
+  button {
+    margin-top: 1.5rem;
+    width: 70%;
+    padding: 0.6rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+  .title {
+    font-weight: 700;
+    margin-top: 0.5rem;
+  }
+  .info {
+    font-size: 0.8rem;
+    line-height: 1.3rem;
+    width: 90%;
+  }
+}
